@@ -10,12 +10,26 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 // import Contador from './components/Contador';
 // import Pai from './components/indireta/Pai';
 // import ContadorV2 from './components/contador/ContadorV2'
-import Diferenciar from './components/Diferenciar';
+// import Diferenciar from './components/Diferenciar';
+// import ParImpar from './components/ParImpar'
+// import Familia from './components/relacao/Familia';
+// import Membro from './components/relacao/Membro';
+import UsuarioLogado from './components/UsuarioLogado';
+
+const usuario = {nome: 'Gui', email: 'gui@gmail.com'};
 
 export default () => (
 	<SafeAreaView style={style.App}>
-		<Diferenciar />
+		<UsuarioLogado usuario={usuario} />
 		{/* <Aleatorio min={5} max={90} />
+		<Familia>
+			<Membro nome="Rodrigo" sobrenome="Faro" />
+			<Membro nome="Carlos" sobrenome="Faro" />
+			<Membro nome="Ana" sobrenome="Faro" />
+			<Membro nome="Robson" sobrenome="Faro" />
+		</Familia>
+		<Diferenciar />
+		<ParImpar num={4}/>
 		<ContadorV2 />
 		<Pai />
 		<Contador inicial={100} />
