@@ -1,6 +1,13 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet} from 'react-native';
 
+import Mega from './components/mega/Mega';
+// import FlexboxV4 from './components/layout/FlexboxV4';
+// import FlexboxV3 from './components/layout/FlexboxV3';
+// import FlexboxV2 from './components/layout/FlexboxV2';
+// import Flexbox from './components/layout/Flexbox';
+
+// import Nome from './components/Nome';
 // import Primeiro from './components/Primeiro';
 // import CompPadrao, {Comp1, Comp2} from './components/Multi';
 // import MinMax from './components/MinMax';
@@ -14,14 +21,24 @@ import {SafeAreaView, StyleSheet} from 'react-native';
 // import ParImpar from './components/ParImpar'
 // import Familia from './components/relacao/Familia';
 // import Membro from './components/relacao/Membro';
-import UsuarioLogado from './components/UsuarioLogado';
+// import UsuarioLogado from './components/UsuarioLogado';
+// import ListaProdutos from './components/produtos/ListaProdutos';
+// import ListaProdutosV2 from './components/produtos/ListaProdutosV2';
 
-const usuario = {nome: 'Gui', email: 'gui@gmail.com'};
+// const usuario = {nome: 'Gui', email: 'gui@gmail.com'};
 
 export default () => (
 	<SafeAreaView style={style.App}>
-		<UsuarioLogado usuario={usuario} />
+		<Mega qtde={7}/>
 		{/* <Aleatorio min={5} max={90} />
+		<Flexbox />
+		<FlexboxV2 />
+		<FlexboxV3 />
+		<FlexboxV4 />
+		<Nome />
+		<ListaProdutosV2 />
+		<ListaProdutos />
+		<UsuarioLogado usuario={usuario} />
 		<Familia>
 			<Membro nome="Rodrigo" sobrenome="Faro" />
 			<Membro nome="Carlos" sobrenome="Faro" />
